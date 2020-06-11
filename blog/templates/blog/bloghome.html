@@ -1,0 +1,10 @@
+<h1>BlogSpot</h1>
+
+{% for blog in blogs%}
+
+{{ blog.blogtitle }} <br>
+{{ blog.blogdescription }} <br>
+{{ blog.blogtime }} <br>
+<img src="{{ blog.blogimage }}" height="400" width="300 "> <br>
+
+{% endfor %}
