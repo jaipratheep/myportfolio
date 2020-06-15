@@ -6,9 +6,11 @@
     {% load static %}
 
 
+
+
     <div class="row justify-content-center my-3">
-      <div class="col-4">
-    <img src="{% static 'portfolio/jaipic.jpg' %}" height=500>
+      <div class="col-5">
+    <img src="{% static 'portfolio/jaiprofile.jpg' %}" height=500 alt="Avatar">
     </div>
     </div>
 
@@ -16,7 +18,7 @@
 <div class="row">
     {%for project in projects%}
     <div class="col-lg-4 col-md-6">
-    <img src="{{ project.image.url }}" width="350" height="500">
+    <img src="{{ project.image.url }}" width="350" height="250">
     {%if project.url %}
     <a href="{{ project.url}}">link</a>
     {% endif %}
