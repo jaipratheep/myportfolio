@@ -26,22 +26,24 @@
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">
         <img src="{% static "portfolio/hello.jpg" %}" width="30" height="30" class="d-inline-block align-top" alt="Nick's Logo">
-        <span>Portfolio {Jaiprtheep.Sekar}</span>
+        <span>{Jaiprtheep.Sekar}</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-center" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a class="nav-link" href="{% static "portfolio/Jaipratheep_ResumeUK.pdf" %}">Resume</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="https://www.linkedin.com/in/Jaipratheep-Sekar" target="_blank">LinkedIn</a>
           </li>
-          
           <li>
-            <a role="button" href="{% url 'blog:bloghome' %}" class="btn btn-primary">Blog</a>
+            <a role="button" href="{% url 'profile' %}" class="btn btn-primary">Profile</a>
+          </li>
+          <li>
+            <a role="button" href="{% url 'blog:bloghome' %}" class="btn btn-secondary">Blog</a>
           </li>
         </ul>
       </div>
