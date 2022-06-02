@@ -16,7 +16,7 @@ filelock==3.0.12
 gast==0.3.3
 grpcio==1.29.0
 h5py==2.10.0
-html5lib==0.9999999
+html5lib==0.99999999
 hyperlink==19.0.0
 idna==2.9
 imageai==2.1.5
